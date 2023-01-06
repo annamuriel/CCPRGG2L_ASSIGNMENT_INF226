@@ -25,4 +25,40 @@ public class App {
         System.out.println("invalid student e-mail");
     }
     }
+
+
+    Scanner scan = new Scanner(System.in);
+        System.out.print("Enter phone number: ");
+    String PhoneNum = scan.nextLine();
+
+    // Long method
+    Pattern pattern = Pattern.compile("\\+63\\d{10}");
+    Matcher matcher = pattern.matcher(PhoneNum);
+
+    boolean match = matcher.matches();
+
+    if (match) {
+        System.out.println("valid phone number");
+    } else {
+        System.out.println("invalid phone number");
 }
+}
+
+
+    Scanner scan = new Scanner(System.in);
+        System.out.print("Enter your birthday: ");
+        String Birthday = scan.nextLine();
+
+        // Long method
+        Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
+        Matcher matcher = pattern.matcher(Birthday);
+
+        boolean match = matcher.matches();
+
+        if (match) {
+            System.out.println("valid date of birth");
+        } else {
+            System.out.println("invalid date of birth");
+        }
+        }
+    }
