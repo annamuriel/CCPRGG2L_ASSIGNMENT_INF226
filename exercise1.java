@@ -21,7 +21,7 @@ public static void main(String[] args) {
     String website = scan.nextLine();
 
     // Provide regex pattern
-    pattern = Pattern.compile("^(?:www.)[?a-zA-Z0-9].{2,8}.com");
+    pattern = Pattern.compile("^(?:www.)[?a-zA-Z0-9].{2,}.com");
 
     match = pattern.matcher(website);
 
