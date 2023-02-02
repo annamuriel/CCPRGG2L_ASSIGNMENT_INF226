@@ -28,8 +28,8 @@ static void loseWeight(int currentWeight) {
     currentWeight = checkWeight(currentWeight);
 
     if (currentWeight > targetWeight) {
+        currentWeight = fixDietandExercise(currentWeight);
         loseweight(currentWeight);
-        fixDietandExercise(currentWeight);
     } else if (currentWeight == targetWeight) {
         System.out.println("I have reached my target weight!");
 }
