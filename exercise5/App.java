@@ -6,7 +6,7 @@ public class App {
        // System.out.println(me.name);
 
         // set method
-        me.setName("abcdef");
+        me.setName("Nikol");
 
         // get method
         System.out.println(me.getName());
